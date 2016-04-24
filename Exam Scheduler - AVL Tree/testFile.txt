@@ -1,0 +1,20 @@
+10 20  6
+aaron    104 170
+michael 104   170 350
+jarjar  101
+finn  270  350
+James 104 170
+Abdullah 101 350
+Quinn 460 270
+Jessica 101 104 170
+Teo 270 420 550
+Moffitt 270 350
+Fred 170 104
+Brandon 460 270
+Billy 170 101
+Samuel 123 145
+John 104 170 101
+Jack 123 270 101
+Dan 101 104
+Paige 350 420 104 
+Rapunzel 104 170 350 400

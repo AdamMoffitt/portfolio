@@ -1,0 +1,7 @@
+*.
+*.o
+*.txt
+moc_debugger_window.cpp
+moc_error_window.cpp 
+moc_main_window.cpp 
+moc_values_window.cpp
