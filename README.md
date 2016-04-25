@@ -10,18 +10,18 @@ Computer Programming Languages: C++ and Java
 	-Sublime, Gedit, Eclipse, Bluejay
 
 Concepts:
-	-Data Structures and Object-Oriented Design
-		Stack, Queues, Lists, Trees (Binary Search, Balanced, AVL), Hash Tables
+  * Data Structures and Object-Oriented Design
+      * Stack, Queues, Lists, Trees (Binary Search, Balanced, AVL), Hash Tables
 		Operator Overloading, Comparator functors  
-	-Recursion, Memory Management  
-	-Inheritance, Polymorphism, Composition  
+  * Recursion, Memory Management  
+  * Inheritance, Polymorphism, Composition  
  	-STL  
 	-Sorts and Searches  
 	-GTest etc.  
 
 C++ Projects:
-	..-Graphical Debugger and Interpreter for Facile program using Qt GUI
-	-Maze Generator and Solver using A* heuristic, DFS, BFS searches
-	-Text-Word Counter using Splay Trees and Hash Table
-	-Exam Scheduler using custom AVL Tree
-	-Simple Arithmetic Parser and Evaluator
+	-Graphical Debugger and Interpreter for Facile program using Qt GUI  
+	-Maze Generator and Solver using A* heuristic, DFS, BFS searches  
+	-Text-Word Counter using Splay Trees and Hash Table  
+	-Exam Scheduler using custom AVL Tree  
+	-Simple Arithmetic Parser and Evaluator  
