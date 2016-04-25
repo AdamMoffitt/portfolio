@@ -12,12 +12,12 @@ Computer Programming Languages: C++ and Java
 Concepts:
 	-Data Structures and Object-Oriented Design
 		Stack, Queues, Lists, Trees (Binary Search, Balanced, AVL), Hash Tables
-		Operator Overloading, Comparator functors
-	-Recursion, Memory Management..
-	-Inheritance, Polymorphism, Composition
- 	-STL
-	-Sorts and Searches
-	-GTest etc.
+		Operator Overloading, Comparator functors  
+	-Recursion, Memory Management  
+	-Inheritance, Polymorphism, Composition  
+ 	-STL  
+	-Sorts and Searches  
+	-GTest etc.  
 
 C++ Projects:
 	..-Graphical Debugger and Interpreter for Facile program using Qt GUI
