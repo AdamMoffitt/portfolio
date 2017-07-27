@@ -13,11 +13,11 @@ class FoodItem: NSObject {
     var image : String?
     var name : String?
     var quantity : Int?
-    var addedDate : NSDate?
-    var expirationDate : NSDate?
+    var addedDate : Date?
+    var expirationDate : Date?
     var unitOfMeasurement : String?
     var id : Double?
-    var unitPrice: Double = 0.00;
+    var unitPrice: Double = 0.00
     
     func getName () -> String {
         return self.name!
@@ -42,11 +42,15 @@ class FoodItem: NSObject {
         quantity! += Quantity
     }
     
-    func set(addedDate : NSDate){
+    func decrease(Quantity: Int) {
+        quantity! -= Quantity
+    }
+    
+    func set(addedDate : Date){
         self.addedDate = addedDate
     }
     
-    func getaddedDate() -> NSDate {
+    func getaddedDate() -> Date {
         return addedDate!
     }
     
@@ -81,10 +85,12 @@ class FoodItem: NSObject {
     /*
      * Constructor 2
      */
-    convenience init(name: String, quantity: Int, unit: String){
+    convenience init(name: String, quantity: Int, unit: String, addedDate: Date, expirationDate: Date){
         self.init(name: name)
         self.quantity = quantity
         self.unitOfMeasurement = unit
+        self.addedDate = addedDate
+        self.expirationDate = expirationDate
     }
     
     /*
@@ -104,16 +110,6 @@ class FoodItem: NSObject {
         self.name = name;
         self.quantity = quantity;
         self.unitPrice = unitPrice;
-    }
-    
-    /*
-     * Constructor 5
-     */
-    convenience init (name: String, quantity: Int,  addedDate: NSDate) {
-        self.init()
-        self.name = name;
-        self.quantity = quantity;
-        self.addedDate = addedDate
     }
     
     //@Override

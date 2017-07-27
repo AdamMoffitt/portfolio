@@ -16,26 +16,35 @@ class User {
     
         var history: [String] //History???????
         var superMarketId: Double
-        var name: String
+        var fname: String
+        var lname: String
         var username: String
         var password: String
         var email:String
         var age:Int
-        var gender: Character
-        var userId: String
+        var gender: String
+        var uid: String
+    var profilePicture: UIImage?
+    var profilePictureImageURL: String
+    var profilePictureID: String
+    var cookingLevel: String
 
    init(){
         history = []
         superMarketId = 0
         //info
-        name = "Default User"
+        fname = "Default"
+        lname = "User"
         username = ""
         password = ""
         email = ""
         age = 0
         gender = "U"
-        userId = ""
-
+        uid = ""
+        cookingLevel = ""
+        profilePicture = nil
+        profilePictureImageURL = ""
+        profilePictureID = ""
     }
     
     convenience init(email: String, pw: String){
@@ -44,23 +53,41 @@ class User {
         self.password = pw
     }
     
+    convenience init(email: String){
+        self.init()
+        self.email = email
+    }
+    
     convenience init(username: String, email: String){
         self.init()
         self.username = username
         self.email = email
     }
     
-    
-    convenience init(userID: String, email: String){
+    convenience init(username: String, pass: String, email: String,
+                     fname: String, lname: String, age: Int, gender: String, cookingLevel: String){
         self.init()
-        self.userId = userID
+        self.username = username
+        self.email = email
+        self.password = pass
+        self.age = age
+        self.fname = fname
+        self.lname = lname
+        self.gender = gender
+        self.cookingLevel = cookingLevel
+        
+    }
+    
+    convenience init(uid: String, email: String){
+        self.init()
+        self.uid = uid
         self.email = email
     }
     
-    convenience init(userID: String, username: String, email: String){
+    convenience init(uid: String, username: String, email: String){
         self.init()
         self.username = username
-        self.userId = userID
+        self.uid = uid
         self.email = email
     }
 
@@ -79,11 +106,15 @@ class User {
         self.superMarketId = superMarketId;
     }
     func getName() -> String{
-        return name;
+        return fname.appending(lname);
     }
     
-    func setName(_ name: String) {
-        self.name = name;
+    func setFirstName(_ fname: String) {
+        self.fname = fname;
+    }
+    
+    func setLastName(_ lname: String) {
+        self.lname = lname;
     }
     
     func getPassword() -> String {
@@ -101,8 +132,50 @@ class User {
         self.email = email;
     }
     
-    //Preferences
+    func setUsername(_ username: String){
+        self.username = username
+    }
+    func getUsername() -> String {
+        return username
+    }
+    func setAge(_ age: Int){
+        self.age = age
+    }
+    func getAge() -> Int {
+        return age
+    }
+    func setCookingLevel(_ cookingLevel: String) {
+        self.cookingLevel = cookingLevel
+    }
+    func getCookingLevel() -> String {
+        return cookingLevel
+    }
+    func setGender(_ gender: String){
+        self.gender = gender
+    }
+    func getGender() -> String{
+        return gender
+    }
+    func setProfilePictureImageURL(_ url: String) {
+        self.profilePictureImageURL = url
+        if let data = try? Data(contentsOf: NSURL(string: url)! as URL) {
+            print("got profile image")
+            self.profilePicture = UIImage(data: data)!
+        }
+    }
     
-    
+    func toDictionary() -> Any {
+        return [
+            "FirstName":fname,
+            "LastName":lname,
+            "Username": username,
+            "Password": password,
+            "Email": email,
+            "Age": age,
+            "Gender":gender,
+            "ProfilePictureImageURL": profilePictureImageURL,
+            "Kitchen": []
+        ]
+    }
     
 }

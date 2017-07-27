@@ -8,115 +8,76 @@
 
 import UIKit
 
-class RecipeViewController: UIViewController {
+class RecipeViewController: LoadingViewController {
     
-    @IBOutlet var image: UIImageView!
+    @IBOutlet var recipeImage: UIImageView!
     @IBOutlet var name: UILabel!
     @IBOutlet var details: UITextView!
-    var recipe: NSDictionary! = [:]
-    var recipeId: Int?
+    var recipe = Recipe()
+    var recipeId = 0
+    var recipeIndex = 0
+    var newRecipe = Recipe()
+    var sharedRecipMeModel = RecipMeModel.shared
     
+    @IBOutlet var favoriteBarButton: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
+        getRecipe()
     }
     
-    func getRecipeId() -> Int {
-        return self.recipeId!
-    }
-    
-    func setRecipeId(id:Int) {
-        print("setting recipe id to be: \(id)")
-        self.recipeId = id
-    }
-    
-    func getRecipe(){
+    func setRecipe(recipe: Recipe){
+        self.recipe = recipe
+        DispatchQueue.global(qos: .userInitiated).async { // 1
+            var image = UIImage(named: "RecipMeIcon")
+            if(recipe.image != nil){
+                    image = recipe.image
+            }
+            else if(recipe.imageURL != nil) {
+                if let data = try? Data(contentsOf: NSURL(string: recipe.imageURL)! as URL) {
+                    image = UIImage(data: data)
+                }
+            }
+            let gradientLayer = CAGradientLayer()
+            gradientLayer.frame = self.recipeImage.bounds
+            gradientLayer.colors = [UIColor.darkGray, UIColor.clear]
+            gradientLayer.locations = [0.0, 1.0]
+            gradientLayer.startPoint = CGPoint(x: 1, y: 0)
+            gradientLayer.endPoint = CGPoint(x: 0, y: 0)
+            DispatchQueue.main.async {
+                self.recipeImage.image = image
+                self.recipeImage.backgroundColor = UIColor.darkGray.withAlphaComponent(0.5)
+                
+                self.recipeImage.layer.addSublayer(gradientLayer)
+                self.name.text = recipe.title
+                self.details.text = recipe.extendedInstructions
+                if (recipe.isFavorite) {
+                    self.favoriteBarButton.tintColor = UIColor.yellow
+                }
+            }
+        }
+        //HERE GOING TO MAKE MISSING INGREDIENTS SHOW UP IN RED, INCLUDED INGREDIENTS SHOW UP IN BLUE
+       // let missingIngr = NSMutableAttributedString(string: recipe., attributes: [NSFontAttributeName:UIFont(name: "Georgia", size: 18.0)!])
         
-        if(self.recipeId != nil){
-            print("recipe id: \(getRecipeId())")
-            let headers = [
-                "X-Mashape-Key": "M2bNOAU8Z0mshqvOlAwaG837fTY4p18UbIUjsnq4yKt9ZT6mx0",
-                "Accept": "application/json"
-            ]
-            let url = NSURL(string: "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/\(getRecipeId())/information?includeNutrition=false")
-            let request = NSMutableURLRequest(
-                url: url! as URL,
-                cachePolicy: NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData,
-                timeoutInterval: 10)
-            request.httpMethod = "GET"
-            request.allHTTPHeaderFields = headers
-            
-            let session = URLSession(
-                configuration: URLSessionConfiguration.default,
-                delegate: nil,
-                delegateQueue: OperationQueue.main
-            )
-            
-            let task: URLSessionDataTask = session.dataTask(with: request as URLRequest,
-                                                            completionHandler: { (dataOrNil, response, error) in
-                                                                if let data = dataOrNil {
-                                                                    if let responseDictionary = try! JSONSerialization.jsonObject(
-                                                                        with: data, options:[]) as? NSDictionary {
-                                                                        
-                                                                        self.recipe = (responseDictionary as? NSDictionary)!
-                                                                        
-                                                                        
-                                                                        
-                                                                        if self.recipe["title"] != nil {
-                                                                            if self.name != nil {
-                                                                                self.name.text = self.recipe["title"] as? String
-                                                                            }
-                                                                        }
-                                                                        //get image
-                                                                        if self.recipe["image"] != nil {
-                                                                            if self.image != nil {
-                                                                                let imageUrl = URL(string: self.recipe["image"] as! String)
-                                                                                let data = try? Data(contentsOf: imageUrl!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
-                                                                                self.image.image = UIImage(data: data!)
-                                                                            }
-                                                                        }
-                                                                        
-                                                                        if self.recipe["instructions"] != nil {
-                                                                            var textString = ""
-                                                                            if(self.recipe["aggregateLikes"] != nil){
-                                                                                textString.append("Likes: \((String)(self.recipe["aggregateLikes"] as! Int))\n")
-                                                                            }
-                                                                            if(self.recipe["cookingMinutes"] != nil){
-                                                                                textString.append("Cooking Minutes: \((String)(self.recipe["cookingMinutes"] as! Int))\n")
-                                                                            }
-                                                                            if(self.recipe["preparationMinutes"] != nil){
-                                                                                textString.append("Preparation Minutes: \((String)(self.recipe["preparationMinutes"] as! Int))\n")
-                                                                            }
-                                                                            if(self.recipe["readyInMinutes"] != nil){
-                                                                                textString.append("Ready in \((String)(self.recipe["readyInMinutes"] as! Int)) minutes!\n")
-                                                                            }
-                                                                            if(self.recipe["readyInMinutes"] != nil){
-                                                                                textString.append("\nIngredients:\n")
-                                                                                let ingr = self.recipe["extendedIngredients"] as! [NSDictionary]
-                                                                                for (index, _) in ingr.enumerated() {
-                                                                                    textString.append("\(index+1): \((ingr[index] )["originalString"]!)\n")
-                                                                                }
-                                                                            }
-                                                                            if(self.recipe["instructions"] is NSNull){
-                                                                                textString.append("\n\nVisit: \((self.recipe["sourceUrl"])!) for recipe instructions!")
-                                                                            }else {
-                                                                                textString.append("\nInstructions:\n \(self.recipe["instructions"] as! String))")
-                                                                            }
-                                                                            
-                                                                            if self.details != nil{
-                                                                                print("final string is now: \(textString)")
-                                                                                self.details.text = textString
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                }
-                                                                
-            });
-            
-            task.resume()
-        }
-        else{
-            print("recipe id is null")
-        }
+        //myMutableString.addAttribute(NSForegroundColorAttributeName, value: UIColor.redColor(), range: NSRange(location:2,length:4))
+
+        
     }
     
+    func getRecipe() {
+        self.showLoadingScreen()
+        sharedRecipMeModel.getRecipe(recipeId: recipeId, completionHandler: {
+            recipe -> Void in
+                //update RecipeResults recipe with extended information
+                if let rIndex = self.sharedRecipMeModel.recipeResults.index(where: {$0.id==recipe.id}){
+                    self.sharedRecipMeModel.recipeResults[rIndex] = recipe
+                }
+                self.setRecipe(recipe: recipe)
+                self.hideLoadingScreen()
+        })
+    }
+    
+    @IBAction func favoriteButtonPressed(_ sender: Any) {
+        self.favoriteBarButton.tintColor = UIColor.yellow
+        sharedRecipMeModel.addFavorite(recipe: self.recipe, index: self.recipeIndex)
+    }
 }

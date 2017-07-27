@@ -9,78 +9,80 @@
 import UIKit
 import FirebaseDatabase
 import FirebaseAuth
+import FBSDKLoginKit
 
 class LogInViewController: UIViewController {
 
+    @IBOutlet var fbLoginButtonView: UIView!
     @IBOutlet var emailTextfield: UITextField!
     @IBOutlet var passwordTextfield: UITextField!
-     let sharedRecipMeModel = RecipMeModel.shared
+    let sharedRecipMeModel = RecipMeModel.shared
+    let userDefaults = UserDefaults.standard
     
     var validUser = false;
     
-    var ref:FIRDatabaseReference?
-    
-    
+    var ref:DatabaseReference?
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        sharedRecipMeModel.setFireBase(ref: Database.database().reference(fromURL: "https://recipme-a9e2c.firebaseio.com/"))
+        
         passwordTextfield.isSecureTextEntry = true
-        ref = FIRDatabase .database().reference()
         
-//        FIRAuth.auth()!.addStateDidChangeListener() { auth, user in
-//            if user != nil {
-//                self.sharedRecipMeModel.setMyUser(newUser: User(userID: (user?.uid)!, email: (user?.email!)!))
-//                self.performSegue(withIdentifier: "LogInSegue", sender: nil)
-//            }
-//        }
-
-    }
-    
-    
-    @IBAction func signUpButton(_ sender: AnyObject) {
-
-       //checkSignUp()
-        
-        
-        let alert = UIAlertController(title: "Sign Up",
-                                      message: "Let's make an account so you can get cooking!",
-                                      preferredStyle: .alert)
-        
-        let saveAction = UIAlertAction(title: "Save",
-                                       style: .default) { action in
-                                        let emailField = alert.textFields![0]
-                                        let passwordField = alert.textFields![1]
-                                        
-                                        FIRAuth.auth()!.createUser(withEmail: emailField.text!,
-                                                                   password: passwordField.text!) { user, error in
-                                                                    if error == nil {
-                                                                        FIRAuth.auth()!.signIn(withEmail: self.emailTextfield.text!,
-                                                                                               password: self.passwordTextfield.text!)
-                                                                    }
-                                                                    self.performSegue(withIdentifier: "LogInSegue", sender: nil)
-
-                                                                    self.sharedRecipMeModel.addUser(email: emailField.text!)
-                                        }
-        }
-        
-        let cancelAction = UIAlertAction(title: "Cancel",
-                                         style: .default)
-        
-        alert.addTextField { textEmail in
-            textEmail.placeholder = "Enter your email"
-        }
-        
-        alert.addTextField { textPassword in
-            textPassword.isSecureTextEntry = true
-            textPassword.placeholder = "Enter your password"
-        }
-        
-        alert.addAction(saveAction)
-        alert.addAction(cancelAction)
-        
-        present(alert, animated: true, completion: nil)
+        //let fbLoginButton = FBSDKLoginButton()
+        //fbLoginButton.center = fbLoginButtonView.center
+        //self.view.addSubview(fbLoginButton)
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        if( userDefaults.string(forKey: "email") !=  nil ){
+            let email = userDefaults.string(forKey: "email")
+            let password = userDefaults.string(forKey: "password")
+            signIn(email: email!, pass: password!)
+        }
+    }
+    
+    func signIn(email: String, pass: String) {
+        Auth.auth().signIn(withEmail: email, password: pass, completion: { (user, err) in
+            
+            if(err != nil ){
+                self.error(error: err!.localizedDescription)
+            }
+            else{
+                let newUser = User(email:email)
+                let uid = Auth.auth().currentUser?.uid
+                newUser.uid = uid!
+                Database.database().reference().child("Users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
+                    
+                    if let dict = snapshot.value as? [String: AnyObject] {
+                        newUser.setUsername((dict["username"] as? String)!)
+                        newUser.setEmail((dict["email"] as? String)!)
+                        newUser.setFirstName((dict["fname"] as? String)!)
+                        newUser.setLastName((dict["lname"] as? String)!)
+                        newUser.setCookingLevel((dict["cookingLevel"] as? String)!)
+                        newUser.setGender((dict["gender"] as? String)!)
+                        newUser.setAge((dict["age"] as? Int)!)
+                        if let profilePic = dict["profilePictureImageURL"] as? String {
+                            newUser.setProfilePictureImageURL(profilePic)
+                        }
+                        self.sharedRecipMeModel.setMyUser(newUser:newUser)
+                        self.sharedRecipMeModel.loadFromFirebase()
+                        self.sharedRecipMeModel.loadFavorites()
+                        //How to prevent empty kitchen error being shown because loadFromFirebase loads asynchronously and KitchenTableView is shown before kitchen is loaded. How to add loading screen while kitchen is loaded?
+                        
+                        self.performSegue(withIdentifier: "LogInSegue", sender: nil)
+                    }
+                    else {
+                        //login failed
+                    }
+                    
+                }, withCancel: nil)
+            }
+        })
+    }
+
     func error(error: String){
         let alert = UIAlertController(title: "Error",
                                       message: error,
@@ -97,7 +99,6 @@ class LogInViewController: UIViewController {
     
     func checkSignUp(){
         
-        print("Sign Up")
         //no email or password
         if (emailTextfield.text?.isEmpty)! && (passwordTextfield.text?.isEmpty)! {
             //prompt for both email and password
@@ -117,7 +118,6 @@ class LogInViewController: UIViewController {
             return
         }
         else{
-            print("Lets add you to the database")
             let email = emailTextfield.text as String!
             let password = passwordTextfield.text as String!
             
@@ -131,10 +131,8 @@ class LogInViewController: UIViewController {
             //check if email is already taken
             self.ref?.child("Users").queryOrdered(byChild: "email").queryEqual(toValue: email).observeSingleEvent(of: .value, with: { (snapshot) in
                 if snapshot.exists(){
-                    print("email exists")
                     
                 } else {
-                    print("email doesnt exist")
                     self.ref?.child("Users").child(email!).setValue(newUser)
                     let nUser = User(email: email!, pw: password!)
                     self.sharedRecipMeModel.setMyUser(newUser: nUser)
@@ -148,16 +146,15 @@ class LogInViewController: UIViewController {
     }
     
     @IBAction func logInButton(_ sender: AnyObject) {
-        if(checkLogIn()) {
-        FIRAuth.auth()!.signIn(withEmail: emailTextfield.text!,
-                               password: passwordTextfield.text!)
-            
-        self.performSegue(withIdentifier: "LogInSegue", sender: nil)
+        if checkLogIn() {
+            //set user defaults so user auto logs in next time
+            userDefaults.setValue(emailTextfield.text!, forKey: "email")
+            userDefaults.setValue(passwordTextfield.text!, forKey: "password")
+            self.signIn(email: emailTextfield.text!, pass: passwordTextfield.text!)
         }
     }
     
     func checkLogIn() -> Bool{
-        print("Log In")
         var valid = false
         //no email or password
         if (emailTextfield.text?.isEmpty)! && (passwordTextfield.text?.isEmpty)! {
@@ -177,42 +174,12 @@ class LogInViewController: UIViewController {
             error(error:"Enter a password!")
             return valid
         }
-        else{ // check if user exists
+        else{
             valid = true
-            print("Lets see if you are in the database")
-            let email = emailTextfield.text as String!
-            let password = passwordTextfield.text as String!
-        
-            if(sharedRecipMeModel.getUsers().contains(email!)){
-                self.sharedRecipMeModel.setMyUser(newUser: User(email: email!, pw: password!))
-                return true
-            }
-            else {
-                error(error: "Incorrect username or password")
-                return false
-            }
+            return valid
         }
-        return valid
-
     }
 
-//    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-//        if(identifier == "LogInSegue"){
-//            print("Let's check if user is valid before segue!")
-//                checkLogIn()
-//                return self.validUser
-//        }
-//        else {
-//            print("not log in segue")
-//         return true
-//        }
-//    }
-    
-}
-
-
-extension LogInViewController: UITextFieldDelegate {
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == emailTextfield {
             passwordTextfield.becomeFirstResponder()
