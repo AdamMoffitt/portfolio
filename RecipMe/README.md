@@ -5,6 +5,6 @@ Not sure what to eat for dinner? Forget dropping cash on eating out or delivery,
 Video Walkthrough:
 <img src='http://i.imgur.com/wlTtl4t.gif' title='RecipME Video Walkthrough' width='' alt='Video Walkthrough' />
 
-http://i.imgur.com/RUR5XFn.gif
+http://i.imgur.com/wlTtl4t.gif
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
