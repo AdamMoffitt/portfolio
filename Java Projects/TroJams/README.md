@@ -1,6 +1,6 @@
 # TroJams
 
-** See detailed design document for full project details **
+** See detailed code complete docs for full project details **
 
 ![](http://i.imgur.com/1NrTDfX.gif)
 
