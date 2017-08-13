@@ -6,8 +6,14 @@ This portfolio is representative of Adam Moffitt's experience in computer progra
 
 Computer Science Coursework and Project List – Adam Moffitt
 
-Computer Programming Languages: C++ and Java
-  * Sublime, Gedit, Eclipse, Bluejay
+Computer Programming Languages/Technologies: 
+	* C++
+	* Java
+	* Swift
+	* Javascript
+	* HTML/CSS
+	* React / Redux
+	* Enzyme / Cucumber (unit testing and automation)
 
 Concepts:
   * Data Structures and Object-Oriented Design
