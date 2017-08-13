@@ -1,6 +1,6 @@
 # TroJams
 
-** See detailed design document for full project details**
+** See detailed design document for full project details **
 
 ![](http://i.imgur.com/1NrTDfX.gif)
 
@@ -34,45 +34,45 @@ End page - has option to leave application or join another party
  
 ### Descriptions of Each Page:
 #### Login page - 10 hrs
-  Simple window to connect it to a database (2 hrs)
-  Set up mongodb as a database with users (8 hrs)
-    Username, password (hashed) * This will be the primary key
-    First name, Last name 
-    Photo (optional)
-    Past playlists
-  Buttons at the end of page; login, create account, guest
-  Login is only enabled if all information is inputted correctly
+  * Simple window to connect it to a database (2 hrs)
+  * Set up mongodb as a database with users (8 hrs)
+    * Username, password (hashed) * This will be the primary key
+    * First name, Last name 
+    * Photo (optional)
+    * Past playlists
+  * Buttons at the end of page; login, create account, guest
+  * Login is only enabled if all information is inputted correctly
 #### Create a Party page - 6 hrs
-  This page is for the host to create a party name, submit a password and create a party for guests to join 
-  Once a party name/password have been submitted, this page will lead the host to a new page where the current song from Spotify will be displayed 
+  * This page is for the host to create a party name, submit a password and create a party for guests to join 
+  * Once a party name/password have been submitted, this page will lead the host to a new page where the current song from Spotify will be displayed 
 #### Join a Party page - 14 hrs
-  Displays parties that can be joined (6 hrs)
-  Must have password to join in on a party (unless the party is public and the host did not require a password to be used)
-  Uses networking
-  Potential functionalities: 8 hrs for functionalities
-    Button to host a party (Create a party)
-    Ask for the name of party and if it will be public or private
-    Initialize party object
-    Click on a party to join it
+  * Displays parties that can be joined (6 hrs)
+  * Must have password to join in on a party (unless the party is public and the host did not require a password to be used)
+  * Uses networking
+  * Potential functionalities: 8 hrs for functionalities
+    * Button to host a party (Create a party)
+    * Ask for the name of party and if it will be public or private
+    * Initialize party object
+    * Click on a party to join it
 #### Party page - 18 hrs
-  Password request if needed to join
-  Feed of songs with up vote button, down vote button associated with them - 4 hrs for single user, 4 hrs to network (8 hrs total)
-    ArrayList
-    Refresh button for user so that user isn’t overwhelmed by rapidly changing order of songs
-    Way to add songs to feed — disable for guests - 7 hrs
-    Error message if the song suggested doesn’t exist in Spotify’s database, or is formatted incorrectly
-  Has a search bar where you can search for songs based on name
-  Doesn’t allow addition of a song that is already on the party playlist
-  Functionality to leave the party
-####Logic
-  Feed is the current view of the order in which songs will be played (This can change before songs are chosen to be played next, songs are chosen to be played next 5 seconds before the current song ends)
-  Song order updates when users press refresh button
-  After a song is played, it is removed from feed
+  * Password request if needed to join
+  * Feed of songs with up vote button, down vote button associated with them - 4 hrs for single user, 4 hrs to network (8 hrs total)
+    * ArrayList
+    * Refresh button for user so that user isn’t overwhelmed by rapidly changing order of songs
+    * Way to add songs to feed — disable for guests - 7 hrs
+    * Error message if the song suggested doesn’t exist in Spotify’s database, or is formatted incorrectly
+  * Has a search bar where you can search for songs based on name
+  * Doesn’t allow addition of a song that is already on the party playlist
+  * Functionality to leave the party
+#### Logic
+  * Feed is the current view of the order in which songs will be played (This can change before songs are chosen to be played next, songs are chosen to be played next 5 seconds before the current song ends)
+  * Song order updates when users press refresh button
+  * After a song is played, it is removed from feed
 #### Backend: Spotify API - 8 hours
-  Create a rich back end for the app, with real-time data and notifications and integration of Spotify’s API
-  The SpotifyPublicAPI Package can grab any music data from Spotify’s music database
-  Will take the song searches from users and grab information such as artists, album artwork
-  Create a queue based on the song suggestions
+  * Create a rich back end for the app, with real-time data and notifications and integration of Spotify’s API
+  * The SpotifyPublicAPI Package can grab any music data from Spotify’s music database
+  * Will take the song searches from users and grab information such as artists, album artwork
+  * Create a queue based on the song suggestions
 
 #### Limitation of being a guest/not logged in: Can’t suggest songs , can’t host a party, can’t save a profile
 
