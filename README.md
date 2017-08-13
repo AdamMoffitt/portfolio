@@ -1,6 +1,6 @@
-# Adam Moffitt's C++ Portfolio
+# Adam Moffitt's CS Portfolio
 
-This portfolio is representative of Adam Moffitt's experience in computer programming especially data structures and object oriented design. All of these projects together were completed within 3 months. Refer to the README of each individual project for information on compiling, running, and functionality. Email me at admoffit@usc.edu for any other information.
+This portfolio is representative of Adam Moffitt's experience in computer programming. Refer to the README of each individual project for information on compiling, running, and functionality. Email me at admoffit@usc.edu for any other information.
 
 ----
 
@@ -17,11 +17,7 @@ Concepts:
   * Inheritance, Polymorphism, Composition  
   * STL  
   * Sorts and Searches  
-  * GTest etc.  
-
-C++ Projects:
-  * Graphical Debugger and Interpreter for Facile program using Qt GUI  
-  * Maze Generator and Solver using A* heuristic, DFS, BFS searches  
-  * Text-Word Counter using Splay Trees and Hash Table  
-  * Exam Scheduler using custom AVL Tree  
-  * Simple Arithmetic Parser and Evaluator  
+  * Multi-threading
+  * Networking (client-server)
+  * MVC design patterns
+  * GUI (Java Swing, Qt, iOS)
