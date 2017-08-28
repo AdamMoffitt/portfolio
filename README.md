@@ -15,11 +15,10 @@ Computer Programming Languages/Technologies:
 
 Concepts:
   * Data Structures and Object-Oriented Design
-      * Stack, Queues, Lists, Trees (Binary Search, Balanced, AVL), Hash Tables
+      * Stack, Queues, Lists, Trees (Binary Search, Balanced, AVL), Hash Maps,
 		Operator Overloading, Comparator functors  
   * Recursion, Memory Management  
-  * Inheritance, Polymorphism, Composition  
-  * STL  
+  * Inheritance, Polymorphism, Composition, Abstraction
   * Sorts and Searches  
   * Multi-threading
   * Networking (client-server)
