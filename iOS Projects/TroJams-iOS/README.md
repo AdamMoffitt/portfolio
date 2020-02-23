@@ -2,7 +2,11 @@
 
 Jukebaux: Collaborative DJ App, realtime playlist updates where the next song is crowdsourced based on highest upvoted song. iOS, Swift, Cocoapods, Firebase
 
-<img src='https://imgur.com/a/DmgdXNU' title='Jukebaux Demo' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/yKrejYU' title='Jukebaux Demo' width='' alt='Video Walkthrough' />
+
+<img src='https://imgur.com/a/YG3SGQr' title='Jukebaux Demo' width='' alt='Video Walkthrough' />
+
+<img src='https://imgur.com/a/eKeutyR' title='Jukebaux Demo' width='' alt='Video Walkthrough' />
 
 Full Demo video here: https://vimeo.com/393218181
 
