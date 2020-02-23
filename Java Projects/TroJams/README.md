@@ -253,3 +253,27 @@ To deploy this application within Eclipse, import the TroJams.zip file into Ecli
 Download JLayerME 0.1.3 and add it to the project as an external JAR (Project -> Properties -> Java Build Path -> Libraries -> Add External JARs). 
 To execute the program, run TroJams/src/main/Main.java.
 
+### Technologies
+
+Spotify’s API
+
+HTTP requests (for Spotify)
+
+Java FX
+
+Java music player
+
+Remote server hosting
+
+Password hashing
+
+Eclipse 
+
+Digital Ocean
+
+Multi-threading
+
+Networking
+
+
+https://docs.google.com/presentation/d/1A4cbKX29Bd-XAY_0PlyHl2XHVbeMOBEmPCu69mufdRc/edit#slide=id.g1995699e78_0_0
