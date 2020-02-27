@@ -1,0 +1,258 @@
+PODS:
+  - Alamofire (4.7.2)
+  - AlamofireImage (3.3.1):
+    - Alamofire (~> 4.5)
+  - AlgoliaSearch-Client-Swift (5.1.6)
+  - AZDropdownMenu (1.1.3)
+  - BBBadgeBarButtonItem (1.2)
+  - Charts (3.1.0):
+    - Charts/Core (= 3.1.0)
+  - Charts/Core (3.1.0)
+  - Crashlytics (3.10.1):
+    - Fabric (~> 1.7.5)
+  - Fabric (1.7.6)
+  - Firebase/Auth (4.13.0):
+    - Firebase/Core
+    - FirebaseAuth (= 4.6.1)
+  - Firebase/Core (4.13.0):
+    - FirebaseAnalytics (= 4.2.0)
+    - FirebaseCore (= 4.0.20)
+  - Firebase/Database (4.13.0):
+    - Firebase/Core
+    - FirebaseDatabase (= 4.1.5)
+  - Firebase/Invites (4.13.0):
+    - Firebase/Core
+    - FirebaseInvites (= 2.0.2)
+  - Firebase/Messaging (4.13.0):
+    - Firebase/Core
+    - FirebaseMessaging (= 2.2.0)
+  - Firebase/Storage (4.13.0):
+    - Firebase/Core
+    - FirebaseStorage (= 2.2.0)
+  - FirebaseAnalytics (4.2.0):
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - nanopb (~> 0.3)
+  - FirebaseAuth (4.6.1):
+    - FirebaseAnalytics (~> 4.2)
+    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseCore (4.0.20):
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - FirebaseDatabase (4.1.5):
+    - FirebaseAnalytics (~> 4.1)
+    - FirebaseCore (~> 4.0)
+    - leveldb-library (~> 1.18)
+  - FirebaseDynamicLinks (2.3.2):
+    - FirebaseAnalytics (~> 4.0)
+  - FirebaseInstanceID (2.0.10):
+    - FirebaseCore (~> 4.0)
+  - FirebaseInvites (2.0.2):
+    - FirebaseAnalytics (~> 4.0)
+    - FirebaseDynamicLinks (~> 2.2)
+    - GoogleAPIClientForREST (~> 1.0)
+    - GoogleSignIn (~> 4.1)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
+    - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
+    - GoogleToolboxForMac/StringEncoding (~> 2.1)
+    - GoogleToolboxForMac/URLBuilder (~> 2.1)
+    - GTMOAuth2 (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+    - GTMSessionFetcher/Full (~> 1.1)
+    - Protobuf (~> 3.1)
+  - FirebaseMessaging (2.2.0):
+    - FirebaseAnalytics (~> 4.1)
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - Protobuf (~> 3.5)
+  - FirebaseStorage (2.2.0):
+    - FirebaseAnalytics (~> 4.1)
+    - FirebaseCore (~> 4.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleAPIClientForREST (1.3.4):
+    - GoogleAPIClientForREST/Core (= 1.3.4)
+    - GTMSessionFetcher (>= 1.1.7)
+  - GoogleAPIClientForREST/Core (1.3.4):
+    - GTMSessionFetcher (>= 1.1.7)
+  - GoogleSignIn (4.1.2):
+    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
+    - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
+    - GTMOAuth2 (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleToolboxForMac/Core (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - GoogleToolboxForMac/DebugUtils (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - GoogleToolboxForMac/Defines (2.1.4)
+  - GoogleToolboxForMac/Logger (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.1.4)":
+    - GoogleToolboxForMac/DebugUtils (= 2.1.4)
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+    - "GoogleToolboxForMac/NSString+URLArguments (= 2.1.4)"
+  - "GoogleToolboxForMac/NSString+URLArguments (2.1.4)"
+  - GoogleToolboxForMac/StringEncoding (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - GoogleToolboxForMac/URLBuilder (2.1.4):
+    - GoogleToolboxForMac/Core (= 2.1.4)
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+    - "GoogleToolboxForMac/NSDictionary+URLArguments (= 2.1.4)"
+    - "GoogleToolboxForMac/NSString+URLArguments (= 2.1.4)"
+  - GTMOAuth2 (1.1.6):
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.1.15):
+    - GTMSessionFetcher/Full (= 1.1.15)
+  - GTMSessionFetcher/Core (1.1.15)
+  - GTMSessionFetcher/Full (1.1.15):
+    - GTMSessionFetcher/Core (= 1.1.15)
+  - InstantSearch-Core-Swift (3.2.1):
+    - AlgoliaSearch-Client-Swift (~> 5.0)
+  - InstantSearch-iOS (2.1.1):
+    - InstantSearch-Core-Swift (~> 3.2)
+  - IQKeyboardManagerSwift (5.0.8)
+  - leveldb-library (1.20)
+  - MessageKit (0.13.4)
+  - MIBadgeButton-Swift (0.5)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - NVActivityIndicatorView (4.2.0):
+    - NVActivityIndicatorView/Presenter (= 4.2.0)
+  - NVActivityIndicatorView/Presenter (4.2.0)
+  - paper-onboarding (4.0.2)
+  - Protobuf (3.5.0)
+  - SCLAlertView (0.8)
+  - SendBirdSDK (3.0.95)
+  - SwiftyJSON (4.1.0)
+  - UIDropDown (1.1.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - AlgoliaSearch-Client-Swift
+  - AZDropdownMenu
+  - BBBadgeBarButtonItem
+  - Charts (= 3.1.0)
+  - Crashlytics
+  - Fabric
+  - Firebase/Auth
+  - Firebase/Core
+  - Firebase/Database
+  - Firebase/Invites
+  - Firebase/Messaging
+  - Firebase/Storage
+  - GoogleSignIn
+  - InstantSearch-Core-Swift
+  - InstantSearch-iOS
+  - IQKeyboardManagerSwift (= 5.0.8)
+  - MessageKit
+  - MIBadgeButton-Swift (from `https://github.com/mustafaibrahim989/MIBadgeButton-Swift.git`, branch `master`)
+  - NVActivityIndicatorView
+  - paper-onboarding
+  - SCLAlertView
+  - SendBirdSDK
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+  - UIDropDown
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - AlgoliaSearch-Client-Swift
+    - AZDropdownMenu
+    - BBBadgeBarButtonItem
+    - Charts
+    - Crashlytics
+    - Fabric
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseAuth
+    - FirebaseCore
+    - FirebaseDatabase
+    - FirebaseDynamicLinks
+    - FirebaseInstanceID
+    - FirebaseInvites
+    - FirebaseMessaging
+    - FirebaseStorage
+    - GoogleAPIClientForREST
+    - GoogleSignIn
+    - GoogleToolboxForMac
+    - GTMOAuth2
+    - GTMSessionFetcher
+    - InstantSearch-Core-Swift
+    - InstantSearch-iOS
+    - IQKeyboardManagerSwift
+    - leveldb-library
+    - MessageKit
+    - nanopb
+    - NVActivityIndicatorView
+    - paper-onboarding
+    - Protobuf
+    - SCLAlertView
+    - SendBirdSDK
+    - UIDropDown
+
+EXTERNAL SOURCES:
+  MIBadgeButton-Swift:
+    :branch: master
+    :git: https://github.com/mustafaibrahim989/MIBadgeButton-Swift.git
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  MIBadgeButton-Swift:
+    :commit: 3c2638d2e6e46ec2e6dd978d8ada8863df3df5e6
+    :git: https://github.com/mustafaibrahim989/MIBadgeButton-Swift.git
+  SwiftyJSON:
+    :commit: ebfc0d7e314f15c1df02fcb198beb40624421839
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
+  AlgoliaSearch-Client-Swift: cd60a80007f00923b37a14ff03af96889083111d
+  AZDropdownMenu: 5aa9d598d0c8aa36ca51a7302e79b98d544d5554
+  BBBadgeBarButtonItem: c2fbca0bff18e21b70defc9438a8a5048008e7ca
+  Charts: 0b0c96f6118b6ce63f11adbcaa3b31045ee4d772
+  Crashlytics: aee1a064cbbf99b32efa3f056a5f458d846bc8ff
+  Fabric: f8d42c893bb187326a7968b62abe55c36a987a46
+  Firebase: 5ec5e863d269d82d66b4bf56856726f8fb8f0fb3
+  FirebaseAnalytics: 7ef69e76a5142f643aeb47c780e1cdce4e23632e
+  FirebaseAuth: bf22cacf22c60ab454bf2636f556d8892b10b53f
+  FirebaseCore: 90cb1c53d69b556f112a1bf72b5fcfaad7650790
+  FirebaseDatabase: 5f0bc6134c5c237cf55f9e1249d406770a75eafd
+  FirebaseDynamicLinks: 38b68641d24e78d0277a9205d988ce22875d5a25
+  FirebaseInstanceID: 8d20d890d65c917f9f7d9950b6e10a760ad34321
+  FirebaseInvites: 2679f61d3d554ec11f0b685d27cd54b91833c54a
+  FirebaseMessaging: 75cdb862e86c30e0913a2ff307e48d49357c5b73
+  FirebaseStorage: 0c223481c8f89ed300cf1239ddd2d9833622c65f
+  GoogleAPIClientForREST: f7951c455df271bc6259b3ddb4073d0026475ccf
+  GoogleSignIn: d9ef55b10f0aa401a5de2747f59b725e4b9732ac
+  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  GTMOAuth2: e8b6512c896235149df975c41d9a36c868ab7fba
+  GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
+  InstantSearch-Core-Swift: 0863a6bf3ebf46ae334341d89cf63c9710ccec71
+  InstantSearch-iOS: 369db77e423c53b4fa8ef1dfac9c6e8755538b4b
+  IQKeyboardManagerSwift: 2e7dc7f98c111458c1ea2b373f893e8cf95e2b97
+  leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  MessageKit: b600e3f466632f93c0333c78fd9006c960c8cbe2
+  MIBadgeButton-Swift: 9e57309b00b168d75ca8fecb45bc75124a8ffddf
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  NVActivityIndicatorView: 75c9634073e03b31d7e2748cd2417feab1206195
+  paper-onboarding: e6e2778c4e8de8db1d798bb7e3b4922e91fb7f99
+  Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+  SendBirdSDK: 8fee391e0b85c3c36fdce5f4cc5a48aab04b2858
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+  UIDropDown: 22e6e3e22d419884c8f21d95ea9be36aac905ed4
+
+PODFILE CHECKSUM: 55efd1be7ac69d078422686cd0f90c3d5d8a9641
+
+COCOAPODS: 1.5.3

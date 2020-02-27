@@ -1,0 +1,13 @@
+*.pbxuser
+.DS_Store
+Hedge\ Beta.xcodeproj/xcuserdata/*
+Pods/Pods.xcodeproj/xcuserdata/*
+*.xcuserstate
+*.xcbkptlist
+*.pyc
+*.idea
+*.idea/*
+*.iml
+*.pbxproj
+!project.pbxproj
+fundu.xcworkspace/xcuserdata/*

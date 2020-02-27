@@ -1,0 +1,6 @@
+framework module Pods_Hedge_Beta {
+  umbrella header "Pods-Hedge Beta-umbrella.h"
+
+  export *
+  module * { export * }
+}

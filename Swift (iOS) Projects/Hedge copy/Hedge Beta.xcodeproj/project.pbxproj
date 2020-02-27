@@ -1,0 +1,801 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		193CBFE0E72DF231E6F79264 /* Pods_Hedge_Beta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 961076DB9B06F4973CA0E99E /* Pods_Hedge_Beta.framework */; };
+		A0468ED42096133D0051F666 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0468ED22096133D0051F666 /* NotificationsViewController.swift */; };
+		A0468ED52096133D0051F666 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0468ED32096133D0051F666 /* NotificationCell.swift */; };
+		A0856B072095D41B009A7335 /* TeammateStockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0856B062095D41B009A7335 /* TeammateStockTableViewCell.swift */; };
+		A08A5E7E2080854C00D1B096 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = A08A5E7D2080854C00D1B096 /* fonts */; };
+		A0C71B9C20918EFB0023348C /* TeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C71B9920918EFA0023348C /* TeamsViewController.swift */; };
+		A0C71B9D20918EFB0023348C /* PortfolioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C71B9A20918EFA0023348C /* PortfolioTableViewCell.swift */; };
+		A0C71B9E20918EFB0023348C /* LeagueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C71B9B20918EFA0023348C /* LeagueTableViewCell.swift */; };
+		F50129E82087ADDE0053C678 /* WalletCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50129E72087ADDE0053C678 /* WalletCell.swift */; };
+		F505749E20703F7C00D8989E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505749D20703F7C00D8989E /* Message.swift */; };
+		F50574A02070416C00D8989E /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505749F2070416C00D8989E /* SampleData.swift */; };
+		F50574A22070467B00D8989E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50574A12070467B00D8989E /* Extensions.swift */; };
+		F50574A82072C24F00D8989E /* UIBarButtonItem+Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50574A72072C24F00D8989E /* UIBarButtonItem+Badge.swift */; };
+		F50574AB2072C80700D8989E /* LeagueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50574AA2072C80700D8989E /* LeagueViewController.swift */; };
+		F5251630206F3D5F009BD48B /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F525162D206F3D5E009BD48B /* OnboardingViewController.swift */; };
+		F5251631206F3D5F009BD48B /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F525162E206F3D5E009BD48B /* AuthViewController.swift */; };
+		F5251632206F3D5F009BD48B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F525162F206F3D5F009BD48B /* OnboardingView.swift */; };
+		F5251635206F40B0009BD48B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5251634206F40B0009BD48B /* TabBarViewController.swift */; };
+		F5251637206F40D8009BD48B /* LeaderboardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5251636206F40D8009BD48B /* LeaderboardsViewController.swift */; };
+		F525163A206F41F6009BD48B /* LeaguesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5251638206F41F5009BD48B /* LeaguesTableViewCell.swift */; };
+		F525163B206F41F6009BD48B /* UserLeaguesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5251639206F41F5009BD48B /* UserLeaguesViewController.swift */; };
+		F5251646206F44B3009BD48B /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5251641206F44B3009BD48B /* DashboardViewController.swift */; };
+		F5251647206F44B3009BD48B /* FeedCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5251642206F44B3009BD48B /* FeedCollectionTableViewCell.swift */; };
+		F5251648206F44B3009BD48B /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5251643206F44B3009BD48B /* FeedViewController.swift */; };
+		F5251649206F44B3009BD48B /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5251644206F44B3009BD48B /* FeedTableViewCell.swift */; };
+		F525164A206F44B3009BD48B /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5251645206F44B3009BD48B /* DashboardCollectionViewCell.swift */; };
+		F5329FB1206F3767007CB7C1 /* InboxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5329FA3206F3766007CB7C1 /* InboxTableViewController.swift */; };
+		F5329FB2206F3767007CB7C1 /* UserStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5329FA5206F3767007CB7C1 /* UserStock.swift */; };
+		F5329FB3206F3767007CB7C1 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5329FA6206F3767007CB7C1 /* Team.swift */; };
+		F5329FB4206F3767007CB7C1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5329FA7206F3767007CB7C1 /* User.swift */; };
+		F5329FB5206F3767007CB7C1 /* StatImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5329FA8206F3767007CB7C1 /* StatImageView.swift */; };
+		F5329FB6206F3767007CB7C1 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5329FA9206F3767007CB7C1 /* Stock.swift */; };
+		F5329FB7206F3767007CB7C1 /* LeagueTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5329FAA206F3767007CB7C1 /* LeagueTeam.swift */; };
+		F5329FB8206F3767007CB7C1 /* UserNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5329FAB206F3767007CB7C1 /* UserNotification.swift */; };
+		F5329FB9206F3767007CB7C1 /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5329FAC206F3767007CB7C1 /* League.swift */; };
+		F5329FBA206F3767007CB7C1 /* FeedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5329FAD206F3767007CB7C1 /* FeedEvent.swift */; };
+		F5329FBB206F3767007CB7C1 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5329FAE206F3767007CB7C1 /* Article.swift */; };
+		F5329FBC206F3767007CB7C1 /* DailyStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5329FAF206F3767007CB7C1 /* DailyStat.swift */; };
+		F5329FBD206F3767007CB7C1 /* FunduModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5329FB0206F3767007CB7C1 /* FunduModel.swift */; };
+		F5329FBF206F38C6007CB7C1 /* MessagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5329FBE206F38C6007CB7C1 /* MessagesTableViewCell.swift */; };
+		F5469A71206F2A3A0079906F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5469A70206F2A3A0079906F /* AppDelegate.swift */; };
+		F5469A7D206F2A3A0079906F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5469A7B206F2A3A0079906F /* LaunchScreen.storyboard */; };
+		F5AA83062070286900564E42 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AA83052070286900564E42 /* ConversationViewController.swift */; };
+		F5BA49CE2091CE4F003639E0 /* jordansWayMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA49CD2091CE4F003639E0 /* jordansWayMessageTableViewCell.swift */; };
+		F5BA49D020926604003639E0 /* tickerToStockName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA49CF20926603003639E0 /* tickerToStockName.swift */; };
+		F5C663A3206F57E500107219 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C663A1206F57E400107219 /* SearchResultCell.swift */; };
+		F5C663A4206F57E500107219 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C663A2206F57E500107219 /* SearchResultsViewController.swift */; };
+		F5C663AA206F5A6200107219 /* CompanyViewController copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C663A5206F5A5D00107219 /* CompanyViewController copy.swift */; };
+		F5C663AB206F5A6200107219 /* NewsArticleCell copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C663A6206F5A5E00107219 /* NewsArticleCell copy.swift */; };
+		F5C663AC206F5A6200107219 /* ArticleViewController copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C663A7206F5A6000107219 /* ArticleViewController copy.swift */; };
+		F5C663AD206F5A6200107219 /* LeagueCompetitionCollectionViewCell copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C663A8206F5A6100107219 /* LeagueCompetitionCollectionViewCell copy.swift */; };
+		F5C663AE206F5A6200107219 /* HedgeLogoTableViewCell copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C663A9206F5A6200107219 /* HedgeLogoTableViewCell copy.swift */; };
+		F5C663B3206F5C1B00107219 /* SelectOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C663B0206F5C1B00107219 /* SelectOptionsViewController.swift */; };
+		F5C663B4206F5C1B00107219 /* CompanyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C663B1206F5C1B00107219 /* CompanyPageViewController.swift */; };
+		F5C663B5206F5C1B00107219 /* SelectionToggleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C663B2206F5C1B00107219 /* SelectionToggleCell.swift */; };
+		F5C663B9206F5CAA00107219 /* InviteFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C663B6206F5CA700107219 /* InviteFriendsViewController.swift */; };
+		F5C663BA206F5CAA00107219 /* TeamLeagueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C663B7206F5CA800107219 /* TeamLeagueTableViewCell.swift */; };
+		F5C663BB206F5CAA00107219 /* TeamStockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C663B8206F5CA900107219 /* TeamStockTableViewCell.swift */; };
+		F5C663C0206F5F8100107219 /* ExpandedCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C663BD206F5F8000107219 /* ExpandedCellTableViewCell.swift */; };
+		F5C663C1206F5F8100107219 /* StockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C663BE206F5F8000107219 /* StockCell.swift */; };
+		F5C663C2206F5F8100107219 /* OldMarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C663BF206F5F8000107219 /* OldMarketViewController.swift */; };
+		F5C663C7206FF27600107219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5C663C6206FF27600107219 /* Assets.xcassets */; };
+		F5C663C9206FFC9A00107219 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5C663C8206FFC9A00107219 /* GoogleService-Info.plist */; };
+		F5FCA0C2207C3CD0000EA25F /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA0C1207C3CD0000EA25F /* MarketViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		844989E56213CAD92A4612B5 /* Pods-Hedge Beta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hedge Beta.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hedge Beta/Pods-Hedge Beta.debug.xcconfig"; sourceTree = "<group>"; };
+		961076DB9B06F4973CA0E99E /* Pods_Hedge_Beta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hedge_Beta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0468ED22096133D0051F666 /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		A0468ED32096133D0051F666 /* NotificationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		A0856B062095D41B009A7335 /* TeammateStockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeammateStockTableViewCell.swift; sourceTree = "<group>"; };
+		A08A5E7D2080854C00D1B096 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
+		A0C71B9920918EFA0023348C /* TeamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeamsViewController.swift; path = "Hedge Beta/Controller/Teams/TeamsViewController.swift"; sourceTree = SOURCE_ROOT; };
+		A0C71B9A20918EFA0023348C /* PortfolioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PortfolioTableViewCell.swift; path = "Hedge Beta/Controller/Teams/PortfolioTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		A0C71B9B20918EFA0023348C /* LeagueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeagueTableViewCell.swift; path = "Hedge Beta/Controller/Teams/LeagueTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		DE21B14E8E34F3B37ED4128C /* Pods-Hedge Beta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hedge Beta.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hedge Beta/Pods-Hedge Beta.release.xcconfig"; sourceTree = "<group>"; };
+		F50129E72087ADDE0053C678 /* WalletCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCell.swift; sourceTree = "<group>"; };
+		F505749D20703F7C00D8989E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		F505749F2070416C00D8989E /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		F50574A12070467B00D8989E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F50574A72072C24F00D8989E /* UIBarButtonItem+Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Badge.swift"; sourceTree = "<group>"; };
+		F50574A92072C2BE00D8989E /* Hedge Beta-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hedge Beta-Bridging-Header.h"; sourceTree = "<group>"; };
+		F50574AA2072C80700D8989E /* LeagueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueViewController.swift; sourceTree = "<group>"; };
+		F525162D206F3D5E009BD48B /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		F525162E206F3D5E009BD48B /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		F525162F206F3D5F009BD48B /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		F5251634206F40B0009BD48B /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		F5251636206F40D8009BD48B /* LeaderboardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardsViewController.swift; sourceTree = "<group>"; };
+		F5251638206F41F5009BD48B /* LeaguesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaguesTableViewCell.swift; sourceTree = "<group>"; };
+		F5251639206F41F5009BD48B /* UserLeaguesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLeaguesViewController.swift; sourceTree = "<group>"; };
+		F5251641206F44B3009BD48B /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		F5251642206F44B3009BD48B /* FeedCollectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCollectionTableViewCell.swift; sourceTree = "<group>"; };
+		F5251643206F44B3009BD48B /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		F5251644206F44B3009BD48B /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		F5251645206F44B3009BD48B /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
+		F5329FA3206F3766007CB7C1 /* InboxTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxTableViewController.swift; sourceTree = "<group>"; };
+		F5329FA5206F3767007CB7C1 /* UserStock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStock.swift; sourceTree = "<group>"; };
+		F5329FA6206F3767007CB7C1 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		F5329FA7206F3767007CB7C1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F5329FA8206F3767007CB7C1 /* StatImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatImageView.swift; sourceTree = "<group>"; };
+		F5329FA9206F3767007CB7C1 /* Stock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		F5329FAA206F3767007CB7C1 /* LeagueTeam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeagueTeam.swift; sourceTree = "<group>"; };
+		F5329FAB206F3767007CB7C1 /* UserNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserNotification.swift; sourceTree = "<group>"; };
+		F5329FAC206F3767007CB7C1 /* League.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
+		F5329FAD206F3767007CB7C1 /* FeedEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedEvent.swift; sourceTree = "<group>"; };
+		F5329FAE206F3767007CB7C1 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		F5329FAF206F3767007CB7C1 /* DailyStat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyStat.swift; sourceTree = "<group>"; };
+		F5329FB0206F3767007CB7C1 /* FunduModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunduModel.swift; sourceTree = "<group>"; };
+		F5329FBE206F38C6007CB7C1 /* MessagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTableViewCell.swift; sourceTree = "<group>"; };
+		F5469A6D206F2A3A0079906F /* Hedge Beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hedge Beta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5469A70206F2A3A0079906F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5469A7C206F2A3A0079906F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5469A7E206F2A3A0079906F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5AA83052070286900564E42 /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		F5BA49CD2091CE4F003639E0 /* jordansWayMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jordansWayMessageTableViewCell.swift; sourceTree = "<group>"; };
+		F5BA49CF20926603003639E0 /* tickerToStockName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tickerToStockName.swift; sourceTree = "<group>"; };
+		F5C663A1206F57E400107219 /* SearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		F5C663A2206F57E500107219 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		F5C663A5206F5A5D00107219 /* CompanyViewController copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CompanyViewController copy.swift"; sourceTree = "<group>"; };
+		F5C663A6206F5A5E00107219 /* NewsArticleCell copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NewsArticleCell copy.swift"; sourceTree = "<group>"; };
+		F5C663A7206F5A6000107219 /* ArticleViewController copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ArticleViewController copy.swift"; sourceTree = "<group>"; };
+		F5C663A8206F5A6100107219 /* LeagueCompetitionCollectionViewCell copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LeagueCompetitionCollectionViewCell copy.swift"; sourceTree = "<group>"; };
+		F5C663A9206F5A6200107219 /* HedgeLogoTableViewCell copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HedgeLogoTableViewCell copy.swift"; sourceTree = "<group>"; };
+		F5C663B0206F5C1B00107219 /* SelectOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectOptionsViewController.swift; sourceTree = "<group>"; };
+		F5C663B1206F5C1B00107219 /* CompanyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyPageViewController.swift; sourceTree = "<group>"; };
+		F5C663B2206F5C1B00107219 /* SelectionToggleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionToggleCell.swift; sourceTree = "<group>"; };
+		F5C663B6206F5CA700107219 /* InviteFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteFriendsViewController.swift; sourceTree = "<group>"; };
+		F5C663B7206F5CA800107219 /* TeamLeagueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamLeagueTableViewCell.swift; sourceTree = "<group>"; };
+		F5C663B8206F5CA900107219 /* TeamStockTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamStockTableViewCell.swift; sourceTree = "<group>"; };
+		F5C663BD206F5F8000107219 /* ExpandedCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandedCellTableViewCell.swift; sourceTree = "<group>"; };
+		F5C663BE206F5F8000107219 /* StockCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockCell.swift; sourceTree = "<group>"; };
+		F5C663BF206F5F8000107219 /* OldMarketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OldMarketViewController.swift; sourceTree = "<group>"; };
+		F5C663C5206F69A900107219 /* Hedge Beta.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hedge Beta.entitlements"; sourceTree = "<group>"; };
+		F5C663C6206FF27600107219 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5C663C8206FFC9A00107219 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F5FCA0C1207C3CD0000EA25F /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5469A6A206F2A3A0079906F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				193CBFE0E72DF231E6F79264 /* Pods_Hedge_Beta.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0C71B9820918EE00023348C /* Teams */ = {
+			isa = PBXGroup;
+			children = (
+				A0C71B9B20918EFA0023348C /* LeagueTableViewCell.swift */,
+				A0C71B9A20918EFA0023348C /* PortfolioTableViewCell.swift */,
+				A0C71B9920918EFA0023348C /* TeamsViewController.swift */,
+				A0856B062095D41B009A7335 /* TeammateStockTableViewCell.swift */,
+			);
+			path = Teams;
+			sourceTree = "<group>";
+		};
+		B78AE8D20613024A7E363891 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				844989E56213CAD92A4612B5 /* Pods-Hedge Beta.debug.xcconfig */,
+				DE21B14E8E34F3B37ED4128C /* Pods-Hedge Beta.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D9E1A65140B84907C31F74BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				961076DB9B06F4973CA0E99E /* Pods_Hedge_Beta.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5251633206F3D9F009BD48B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0C71B9820918EE00023348C /* Teams */,
+				F5C663AF206F5C1B00107219 /* Company */,
+				F525162E206F3D5E009BD48B /* AuthViewController.swift */,
+				F525162F206F3D5F009BD48B /* OnboardingView.swift */,
+				F5251634206F40B0009BD48B /* TabBarViewController.swift */,
+				F525162D206F3D5E009BD48B /* OnboardingViewController.swift */,
+				F5C663B6206F5CA700107219 /* InviteFriendsViewController.swift */,
+				F5C663B7206F5CA800107219 /* TeamLeagueTableViewCell.swift */,
+				F5C663B8206F5CA900107219 /* TeamStockTableViewCell.swift */,
+				F5C663A1206F57E400107219 /* SearchResultCell.swift */,
+				F5C663A2206F57E500107219 /* SearchResultsViewController.swift */,
+				F525164D206F4592009BD48B /* Wallet */,
+				F525163F206F4264009BD48B /* Notifications */,
+				F525163D206F4240009BD48B /* Leagues */,
+				F525163C206F4238009BD48B /* Leaderboards */,
+				F5329FA2206F3766007CB7C1 /* Messages */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F525163C206F4238009BD48B /* Leaderboards */ = {
+			isa = PBXGroup;
+			children = (
+				F5251636206F40D8009BD48B /* LeaderboardsViewController.swift */,
+				F5251638206F41F5009BD48B /* LeaguesTableViewCell.swift */,
+				F5251639206F41F5009BD48B /* UserLeaguesViewController.swift */,
+			);
+			path = Leaderboards;
+			sourceTree = "<group>";
+		};
+		F525163D206F4240009BD48B /* Leagues */ = {
+			isa = PBXGroup;
+			children = (
+				F50574AA2072C80700D8989E /* LeagueViewController.swift */,
+			);
+			path = Leagues;
+			sourceTree = "<group>";
+		};
+		F525163F206F4264009BD48B /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				A0468ED32096133D0051F666 /* NotificationCell.swift */,
+				A0468ED22096133D0051F666 /* NotificationsViewController.swift */,
+				F525164B206F44CE009BD48B /* Old Dashboard */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		F525164B206F44CE009BD48B /* Old Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				F5C663A7206F5A6000107219 /* ArticleViewController copy.swift */,
+				F5C663A5206F5A5D00107219 /* CompanyViewController copy.swift */,
+				F5C663A9206F5A6200107219 /* HedgeLogoTableViewCell copy.swift */,
+				F5C663A8206F5A6100107219 /* LeagueCompetitionCollectionViewCell copy.swift */,
+				F5C663A6206F5A5E00107219 /* NewsArticleCell copy.swift */,
+				F5251641206F44B3009BD48B /* DashboardViewController.swift */,
+				F5251642206F44B3009BD48B /* FeedCollectionTableViewCell.swift */,
+				F5251643206F44B3009BD48B /* FeedViewController.swift */,
+				F5251645206F44B3009BD48B /* DashboardCollectionViewCell.swift */,
+				F5251644206F44B3009BD48B /* FeedTableViewCell.swift */,
+			);
+			path = "Old Dashboard";
+			sourceTree = "<group>";
+		};
+		F525164D206F4592009BD48B /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				F5C663BC206F5F8000107219 /* Old Market */,
+				F5FCA0C1207C3CD0000EA25F /* MarketViewController.swift */,
+				F50129E72087ADDE0053C678 /* WalletCell.swift */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		F5329FA2206F3766007CB7C1 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				F505749F2070416C00D8989E /* SampleData.swift */,
+				F5329FA3206F3766007CB7C1 /* InboxTableViewController.swift */,
+				F5329FBE206F38C6007CB7C1 /* MessagesTableViewCell.swift */,
+				F5BA49CD2091CE4F003639E0 /* jordansWayMessageTableViewCell.swift */,
+				F5AA83052070286900564E42 /* ConversationViewController.swift */,
+				F505749D20703F7C00D8989E /* Message.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		F5329FA4206F3767007CB7C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5329FA5206F3767007CB7C1 /* UserStock.swift */,
+				F5329FA6206F3767007CB7C1 /* Team.swift */,
+				F5329FA7206F3767007CB7C1 /* User.swift */,
+				F5329FA8206F3767007CB7C1 /* StatImageView.swift */,
+				F5329FA9206F3767007CB7C1 /* Stock.swift */,
+				F5329FAA206F3767007CB7C1 /* LeagueTeam.swift */,
+				F5329FAB206F3767007CB7C1 /* UserNotification.swift */,
+				F5329FAC206F3767007CB7C1 /* League.swift */,
+				F5329FAD206F3767007CB7C1 /* FeedEvent.swift */,
+				F5329FAE206F3767007CB7C1 /* Article.swift */,
+				F5329FAF206F3767007CB7C1 /* DailyStat.swift */,
+				F5329FB0206F3767007CB7C1 /* FunduModel.swift */,
+				F5BA49CF20926603003639E0 /* tickerToStockName.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5469A64206F2A390079906F = {
+			isa = PBXGroup;
+			children = (
+				A08A5E7D2080854C00D1B096 /* fonts */,
+				F5469A6F206F2A3A0079906F /* Hedge Beta */,
+				F5469A6E206F2A3A0079906F /* Products */,
+				B78AE8D20613024A7E363891 /* Pods */,
+				D9E1A65140B84907C31F74BB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F5469A6E206F2A3A0079906F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5469A6D206F2A3A0079906F /* Hedge Beta.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5469A6F206F2A3A0079906F /* Hedge Beta */ = {
+			isa = PBXGroup;
+			children = (
+				F5C663C5206F69A900107219 /* Hedge Beta.entitlements */,
+				F5C663C8206FFC9A00107219 /* GoogleService-Info.plist */,
+				F5469A70206F2A3A0079906F /* AppDelegate.swift */,
+				F50574A12070467B00D8989E /* Extensions.swift */,
+				F50574A92072C2BE00D8989E /* Hedge Beta-Bridging-Header.h */,
+				F50574A72072C24F00D8989E /* UIBarButtonItem+Badge.swift */,
+				F5251633206F3D9F009BD48B /* Controller */,
+				F5329FA4206F3767007CB7C1 /* Model */,
+				F5C663C6206FF27600107219 /* Assets.xcassets */,
+				F5469A7B206F2A3A0079906F /* LaunchScreen.storyboard */,
+				F5469A7E206F2A3A0079906F /* Info.plist */,
+			);
+			path = "Hedge Beta";
+			sourceTree = "<group>";
+		};
+		F5C663AF206F5C1B00107219 /* Company */ = {
+			isa = PBXGroup;
+			children = (
+				F5C663B0206F5C1B00107219 /* SelectOptionsViewController.swift */,
+				F5C663B1206F5C1B00107219 /* CompanyPageViewController.swift */,
+				F5C663B2206F5C1B00107219 /* SelectionToggleCell.swift */,
+			);
+			path = Company;
+			sourceTree = "<group>";
+		};
+		F5C663BC206F5F8000107219 /* Old Market */ = {
+			isa = PBXGroup;
+			children = (
+				F5C663BD206F5F8000107219 /* ExpandedCellTableViewCell.swift */,
+				F5C663BE206F5F8000107219 /* StockCell.swift */,
+				F5C663BF206F5F8000107219 /* OldMarketViewController.swift */,
+			);
+			path = "Old Market";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5469A6C206F2A3A0079906F /* Hedge Beta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5469A81206F2A3A0079906F /* Build configuration list for PBXNativeTarget "Hedge Beta" */;
+			buildPhases = (
+				4A0E0A957FBBB4A6FF53A26C /* [CP] Check Pods Manifest.lock */,
+				F5469A69206F2A3A0079906F /* Sources */,
+				F5469A6A206F2A3A0079906F /* Frameworks */,
+				F5469A6B206F2A3A0079906F /* Resources */,
+				AA0C301AA576839AD837DD49 /* [CP] Embed Pods Frameworks */,
+				7612C866C4809C12A96F9B38 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hedge Beta";
+			productName = "Hedge Beta";
+			productReference = F5469A6D206F2A3A0079906F /* Hedge Beta.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5469A65206F2A390079906F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Adam's Apps";
+				TargetAttributes = {
+					F5469A6C206F2A3A0079906F = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F5469A68206F2A3A0079906F /* Build configuration list for PBXProject "Hedge Beta" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5469A64206F2A390079906F;
+			productRefGroup = F5469A6E206F2A3A0079906F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5469A6C206F2A3A0079906F /* Hedge Beta */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5469A6B206F2A3A0079906F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5469A7D206F2A3A0079906F /* LaunchScreen.storyboard in Resources */,
+				F5C663C7206FF27600107219 /* Assets.xcassets in Resources */,
+				F5C663C9206FFC9A00107219 /* GoogleService-Info.plist in Resources */,
+				A08A5E7E2080854C00D1B096 /* fonts in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A0E0A957FBBB4A6FF53A26C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hedge Beta-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7612C866C4809C12A96F9B38 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hedge Beta/Pods-Hedge Beta-resources.sh",
+				"${PODS_ROOT}/FirebaseInvites/Resources/GINInviteResources.bundle",
+				"${PODS_ROOT}/FirebaseInvites/Resources/GPPACLPickerResources.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GINInviteResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GPPACLPickerResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hedge Beta/Pods-Hedge Beta-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA0C301AA576839AD837DD49 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hedge Beta/Pods-Hedge Beta-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AZDropdownMenu/AZDropdownMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AlgoliaSearch-Client-Swift/AlgoliaSearch.framework",
+				"${BUILT_PRODUCTS_DIR}/BBBadgeBarButtonItem/BBBadgeBarButtonItem.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/InstantSearch-Core-Swift/InstantSearchCore.framework",
+				"${BUILT_PRODUCTS_DIR}/InstantSearch-iOS/InstantSearch.framework",
+				"${BUILT_PRODUCTS_DIR}/MIBadgeButton-Swift/MIBadgeButton_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+				"${PODS_ROOT}/SendBirdSDK/SendBirdSDK.framework",
+				"${PODS_ROOT}/SendBirdSDK/SendBirdSDK.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/UIDropDown/UIDropDown.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/paper-onboarding/paper_onboarding.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AZDropdownMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlgoliaSearch.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BBBadgeBarButtonItem.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InstantSearchCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InstantSearch.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MIBadgeButton_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SendBirdSDK.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/SendBirdSDK.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIDropDown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/paper_onboarding.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hedge Beta/Pods-Hedge Beta-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5469A69206F2A3A0079906F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5329FB5206F3767007CB7C1 /* StatImageView.swift in Sources */,
+				A0C71B9D20918EFB0023348C /* PortfolioTableViewCell.swift in Sources */,
+				F5C663AA206F5A6200107219 /* CompanyViewController copy.swift in Sources */,
+				F5329FBF206F38C6007CB7C1 /* MessagesTableViewCell.swift in Sources */,
+				A0C71B9E20918EFB0023348C /* LeagueTableViewCell.swift in Sources */,
+				F50574AB2072C80700D8989E /* LeagueViewController.swift in Sources */,
+				F5329FBD206F3767007CB7C1 /* FunduModel.swift in Sources */,
+				A0856B072095D41B009A7335 /* TeammateStockTableViewCell.swift in Sources */,
+				F5329FB2206F3767007CB7C1 /* UserStock.swift in Sources */,
+				A0468ED52096133D0051F666 /* NotificationCell.swift in Sources */,
+				F5C663A3206F57E500107219 /* SearchResultCell.swift in Sources */,
+				F5329FB3206F3767007CB7C1 /* Team.swift in Sources */,
+				F5329FB7206F3767007CB7C1 /* LeagueTeam.swift in Sources */,
+				F5C663AE206F5A6200107219 /* HedgeLogoTableViewCell copy.swift in Sources */,
+				F5C663BA206F5CAA00107219 /* TeamLeagueTableViewCell.swift in Sources */,
+				F5329FB9206F3767007CB7C1 /* League.swift in Sources */,
+				F5251646206F44B3009BD48B /* DashboardViewController.swift in Sources */,
+				F5329FB4206F3767007CB7C1 /* User.swift in Sources */,
+				F5C663AC206F5A6200107219 /* ArticleViewController copy.swift in Sources */,
+				F5C663B3206F5C1B00107219 /* SelectOptionsViewController.swift in Sources */,
+				F5C663B5206F5C1B00107219 /* SelectionToggleCell.swift in Sources */,
+				F5C663C0206F5F8100107219 /* ExpandedCellTableViewCell.swift in Sources */,
+				F505749E20703F7C00D8989E /* Message.swift in Sources */,
+				F50574A82072C24F00D8989E /* UIBarButtonItem+Badge.swift in Sources */,
+				F5251635206F40B0009BD48B /* TabBarViewController.swift in Sources */,
+				F5C663BB206F5CAA00107219 /* TeamStockTableViewCell.swift in Sources */,
+				F5C663B9206F5CAA00107219 /* InviteFriendsViewController.swift in Sources */,
+				F5251631206F3D5F009BD48B /* AuthViewController.swift in Sources */,
+				F5BA49CE2091CE4F003639E0 /* jordansWayMessageTableViewCell.swift in Sources */,
+				F5329FBA206F3767007CB7C1 /* FeedEvent.swift in Sources */,
+				F5329FBC206F3767007CB7C1 /* DailyStat.swift in Sources */,
+				F5469A71206F2A3A0079906F /* AppDelegate.swift in Sources */,
+				F525163B206F41F6009BD48B /* UserLeaguesViewController.swift in Sources */,
+				F5AA83062070286900564E42 /* ConversationViewController.swift in Sources */,
+				F5C663AB206F5A6200107219 /* NewsArticleCell copy.swift in Sources */,
+				F5C663A4206F57E500107219 /* SearchResultsViewController.swift in Sources */,
+				F50129E82087ADDE0053C678 /* WalletCell.swift in Sources */,
+				F5251649206F44B3009BD48B /* FeedTableViewCell.swift in Sources */,
+				F5251630206F3D5F009BD48B /* OnboardingViewController.swift in Sources */,
+				F5C663B4206F5C1B00107219 /* CompanyPageViewController.swift in Sources */,
+				F5329FB6206F3767007CB7C1 /* Stock.swift in Sources */,
+				F5329FB1206F3767007CB7C1 /* InboxTableViewController.swift in Sources */,
+				F5FCA0C2207C3CD0000EA25F /* MarketViewController.swift in Sources */,
+				F5251637206F40D8009BD48B /* LeaderboardsViewController.swift in Sources */,
+				F5251632206F3D5F009BD48B /* OnboardingView.swift in Sources */,
+				F5C663C1206F5F8100107219 /* StockCell.swift in Sources */,
+				F5329FB8206F3767007CB7C1 /* UserNotification.swift in Sources */,
+				F525163A206F41F6009BD48B /* LeaguesTableViewCell.swift in Sources */,
+				F5251647206F44B3009BD48B /* FeedCollectionTableViewCell.swift in Sources */,
+				F525164A206F44B3009BD48B /* DashboardCollectionViewCell.swift in Sources */,
+				F5C663C2206F5F8100107219 /* OldMarketViewController.swift in Sources */,
+				F50574A22070467B00D8989E /* Extensions.swift in Sources */,
+				F5C663AD206F5A6200107219 /* LeagueCompetitionCollectionViewCell copy.swift in Sources */,
+				F5251648206F44B3009BD48B /* FeedViewController.swift in Sources */,
+				F5BA49D020926604003639E0 /* tickerToStockName.swift in Sources */,
+				A0C71B9C20918EFB0023348C /* TeamsViewController.swift in Sources */,
+				A0468ED42096133D0051F666 /* NotificationsViewController.swift in Sources */,
+				F50574A02070416C00D8989E /* SampleData.swift in Sources */,
+				F5329FBB206F3767007CB7C1 /* Article.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F5469A7B206F2A3A0079906F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5469A7C206F2A3A0079906F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5469A7F206F2A3A0079906F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		F5469A80206F2A3A0079906F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5469A82206F2A3A0079906F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 844989E56213CAD92A4612B5 /* Pods-Hedge Beta.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Hedge Beta/Hedge Beta.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53XJF988U2;
+				INFOPLIST_FILE = "Hedge Beta/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "itp466.hedge.beta-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hedge Beta/Hedge Beta-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5469A83206F2A3A0079906F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE21B14E8E34F3B37ED4128C /* Pods-Hedge Beta.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Hedge Beta/Hedge Beta.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53XJF988U2;
+				INFOPLIST_FILE = "Hedge Beta/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "itp466.hedge.beta-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hedge Beta/Hedge Beta-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5469A68206F2A3A0079906F /* Build configuration list for PBXProject "Hedge Beta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5469A7F206F2A3A0079906F /* Debug */,
+				F5469A80206F2A3A0079906F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5469A81206F2A3A0079906F /* Build configuration list for PBXNativeTarget "Hedge Beta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5469A82206F2A3A0079906F /* Debug */,
+				F5469A83206F2A3A0079906F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5469A65206F2A390079906F /* Project object */;
+}
