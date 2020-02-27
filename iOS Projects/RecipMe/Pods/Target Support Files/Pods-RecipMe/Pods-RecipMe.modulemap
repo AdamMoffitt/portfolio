@@ -1,6 +1,0 @@
-framework module Pods_RecipMe {
-  umbrella header "Pods-RecipMe-umbrella.h"
-
-  export *
-  module * { export * }
-}
