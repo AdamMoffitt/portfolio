@@ -4,9 +4,6 @@
 [submodule "Java (Android) Projects/Moving_Battleships"]
 	path = Java (Android) Projects/Moving_Battleships
 	url = https://github.com/hhurja/Moving_Battleships
-[submodule "Swift (iOS) Projects/Fundu"]
-	path = Swift (iOS) Projects/Fundu
-	url = https://github.com/JCoppert/Fundu
 [submodule "React Native Projects/ReferMD"]
 	path = React Native Projects/ReferMD
 	url = https://github.com/AdamMoffitt/ReferMD
