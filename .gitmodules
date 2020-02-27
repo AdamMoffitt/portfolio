@@ -10,3 +10,6 @@
 [submodule "React Native Projects/ReferMD"]
 	path = React Native Projects/ReferMD
 	url = https://github.com/AdamMoffitt/ReferMD
+[submodule "Swift (iOS) Projects/RecipMe/RecipMe"]
+	path = Swift (iOS) Projects/RecipMe/RecipMe
+	url = https://github.com/AdamMoffitt/RecipMe
