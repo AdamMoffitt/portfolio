@@ -1,0 +1,6 @@
+[submodule "Swift (iOS) Projects/Pensieve-AR"]
+	path = Swift (iOS) Projects/Pensieve-AR
+	url = https://github.com/AdamMoffitt/Pensieve-AR
+[submodule "Java (Android) Projects/Moving_Battleships"]
+	path = Java (Android) Projects/Moving_Battleships
+	url = https://github.com/hhurja/Moving_Battleships
