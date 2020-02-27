@@ -10,3 +10,6 @@
 [submodule "Swift (iOS) Projects/RecipMe/RecipMe"]
 	path = Swift (iOS) Projects/RecipMe/RecipMe
 	url = https://github.com/AdamMoffitt/RecipMe
+[submodule "Swift (iOS) Projects/Jukebaux"]
+	path = Swift (iOS) Projects/Jukebaux
+	url = https://github.com/AdamMoffitt/Jukebaux/

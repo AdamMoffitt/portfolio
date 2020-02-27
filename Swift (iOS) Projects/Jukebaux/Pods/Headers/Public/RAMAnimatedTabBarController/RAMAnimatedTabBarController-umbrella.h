@@ -1,1 +1,0 @@
-../../../Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController-umbrella.h
