@@ -13,3 +13,6 @@
 [submodule "Swift (iOS) Projects/Jukebaux"]
 	path = Swift (iOS) Projects/Jukebaux
 	url = https://github.com/AdamMoffitt/Jukebaux/
+[submodule "HTML+CSS+Javascript"]
+	path = HTML+CSS+Javascript
+	url = https://github.com/AdamMoffitt/AdamMoffitt.github.io
