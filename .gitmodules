@@ -16,3 +16,9 @@
 [submodule "HTML+CSS+Javascript"]
 	path = HTML+CSS+Javascript
 	url = https://github.com/AdamMoffitt/AdamMoffitt.github.io
+[submodule "HTML+CSS+Javascript Projects/Personal Website (www.adammoffitt.me)/AdamMoffitt.github.io"]
+	path = HTML+CSS+Javascript Projects/Personal Website (www.adammoffitt.me)/AdamMoffitt.github.io
+	url = https://github.com/AdamMoffitt/AdamMoffitt.github.io
+[submodule "HTML+CSS+Javascript Projects/AdamMoffitt.github.io"]
+	path = HTML+CSS+Javascript Projects/AdamMoffitt.github.io
+	url = https://github.com/AdamMoffitt/AdamMoffitt.github.io
