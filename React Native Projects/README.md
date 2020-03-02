@@ -3,7 +3,7 @@
 ReferMD: Cross-platform mobile application to streamline the referral process between General Physicians and Specialist Doctors.
 
 Technologies:  
-...React Native,  
+   React Native,  
 ...Firebase Functions (server-client, javascript),  
 ...Firebase Messaging,  
 ...Firebase Firestore Database,  
