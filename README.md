@@ -6,7 +6,9 @@ Refer to the README of each individual project for information on compiling, run
 
 ----
 
-# Project Directory (from most recent, by technology / language):
+# Project Directory 
+__(from most recent, by technology / language):__
+------
 
 __React Native Projects:__
 	ReferMD: Contracted cross-platform app to facilitate referral process between primary doctor, specialty doctor, and patients. 
