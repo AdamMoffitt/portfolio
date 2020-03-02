@@ -4,12 +4,12 @@ ReferMD: Cross-platform mobile application to streamline the referral process be
 
 Technologies:  
 
-...React Native,  
-...Firebase Functions (server-client, javascript),  
-...Firebase Messaging,  
-...Firebase Firestore Database,  
-...Firebase Cloud Storage,  
-...Firebase Authentication,  
-...Apple Push notifications,  
-...Automated emailing (HTML template injection),  
-...Twilio SMS sending
+ - React Native,  
+ - Firebase Functions (server-client, javascript),  
+ - Firebase Messaging,  
+ - Firebase Firestore Database,  
+ - Firebase Cloud Storage,  
+ - Firebase Authentication,  
+ - Apple Push notifications,  
+ - Automated emailing (HTML template injection),  
+ - Twilio SMS sending
