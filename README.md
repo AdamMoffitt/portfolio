@@ -12,10 +12,10 @@ __React Native Projects:__
 	ReferMD: Contracted cross-platform app to facilitate referral process between primary doctor, specialty doctor, and patients. 
 	
 __Swift (iOS) Projects:__
-	RecipMe: App to track what is in your fridge and suggest recipes you can make with what you have on hand. 
-	JukebAux: Collaborative DJ App, realtime playlist updates where the next song is crowdsourced based on highest upvoted song.
-	Hedge: Gamified investing app, creating a fantasy football experience for investing in securities. 
-	Pensieve AR: Location based AR Social Media app displayed geo-tagged images in Artificial Reality
+⋅⋅⋅RecipMe: App to track what is in your fridge and suggest recipes you can make with what you have on hand.  
+⋅⋅⋅JukebAux: Collaborative DJ App, realtime playlist updates where the next song is crowdsourced based on highest upvoted song.  
+⋅⋅⋅Hedge: Gamified investing app, creating a fantasy football experience for investing in securities. 
+⋅⋅⋅Pensieve AR: Location based AR Social Media app displayed geo-tagged images in Artificial Reality
 	
 __Java Projects:__
 	TroJams: Collaborative social music player Desktop application utlizing multi-threading / concurrency.
