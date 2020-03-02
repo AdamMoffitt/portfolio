@@ -1,6 +1,6 @@
 # Adam Moffitt's CS Portfolio
 
-This portfolio contains several of my side projects, passion projects, contracted work, and other examples of my software development experience and work.
+This portfolio contains several of my side projects, passion projects, contracted work, and other examples of my software development experience and work outside of software engineering employment experience.
 
 Refer to the README of each individual project for information on compiling, running, and functionality. Email me at admoffit@usc.edu for any other information.
 
