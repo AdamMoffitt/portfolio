@@ -8,7 +8,7 @@ Refer to the README of each individual project for information on compiling, run
 
 # Project Directory (from most recent, by technology / language):
 
-React Native Projects: 
+__React Native Projects: __
 	ReferMD: Contracted cross-platform app to facilitate referral process between primary doctor, specialty doctor, and patients. 
 	
 Swift (iOS) Projects:
@@ -17,7 +17,7 @@ Swift (iOS) Projects:
 	Hedge: Gamified investing app, creating a fantasy football experience for investing in securities. 
 	Pensieve AR: Location based AR Social Media app displayed geo-tagged images in Artificial Reality
 	
-Java Projects:
+__Java Projects:__
 	TroJams: Collaborative social music player Desktop application utlizing multi-threading / concurrency.
 	Jeopardy: Multi-player Jeopardy game Desktop implementation utilizing multi-threading / concurrency.
 
