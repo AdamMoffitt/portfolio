@@ -8,10 +8,10 @@ Refer to the README of each individual project for information on compiling, run
 
 # Project Directory (from most recent, by technology / language):
 
-__React Native Projects: __
+__React Native Projects:__
 	ReferMD: Contracted cross-platform app to facilitate referral process between primary doctor, specialty doctor, and patients. 
 	
-Swift (iOS) Projects:
+__Swift (iOS) Projects:__
 	RecipMe: App to track what is in your fridge and suggest recipes you can make with what you have on hand. 
 	JukebAux: Collaborative DJ App, realtime playlist updates where the next song is crowdsourced based on highest upvoted song.
 	Hedge: Gamified investing app, creating a fantasy football experience for investing in securities. 
@@ -21,13 +21,13 @@ __Java Projects:__
 	TroJams: Collaborative social music player Desktop application utlizing multi-threading / concurrency.
 	Jeopardy: Multi-player Jeopardy game Desktop implementation utilizing multi-threading / concurrency.
 
-Java (Android) Projects:
+__Java (Android) Projects:__
 	Focus: App to track, monitor, and restrict access to smartphone / certain applications based on user-set time limits 
 	
-HTML / CSS / Javascript projects:
+__HTML / CSS / Javascript projects:__
 	Personal Website - www.adammoffitt.me
 
-C++ Projects:
+__C++ Projects:__
 	Graphical Debugger and Interpreter for Facile program using Qt GUI
 	Maze Generator and Solver using A* heuristic, DFS, BFS searches
 	Text-Word Counter using Splay Trees and Hash Table
