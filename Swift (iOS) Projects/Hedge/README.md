@@ -1,7 +1,7 @@
 # Hedge
 Gamified group investing app, creating a team-based, fantasy football experience for investing in securities. iOS, Swift, Firebase, Alpha Vantage
 
-![Hedge Screenshot](demo/team page.png?raw=true)
+![Hedge Screenshot](demo/teamPage.png)
 
 https://docs.google.com/presentation/d/1gDsSeyaYJe8_AnjCrnIkp2hGGHEYlASjieqUzWML-KI/edit#slide=id.p1
 
