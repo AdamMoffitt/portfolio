@@ -43,3 +43,36 @@ Build and Run:
 2. Choose your desired device to build on, I recommend iPhone 11
 3. Select the 'Build' button within Xcode to build the project. This will take a few minutes, but a simulator window will display the application on the device chosen in step 2
 5. Enjoy!
+
+Screenshots:
+--------------
+
+Users create and join different Leagues:
+![Hedge League Screenshot](demo/leagueBrowse.png)
+
+Search and purchase securities (actual stock purchase functionality not completed, purchases are virtual only)
+![Hedge Wireframe Screenshot](demo/trade.png)
+
+Users recieve notifications (APNs) for new messages, important notifications, stock updates etc.
+![Hedge Wireframe Screenshot](demo/Notifications.png)
+
+Track your team's aggregated stock success
+![Hedge Wireframe Screenshot](demo/teamBrowse.png)
+
+View your available funds and portfolio value as well as check news updates and stock watchlist (similar to Robinhood wallet page)
+![Hedge Wireframe Screenshot](demo/wallet.png)
+
+Authentication through Google
+![Hedge Wireframe Screenshot](demo/sign-in.png)
+
+App Wireframe
+![Hedge Wireframe Screenshot](demo/majorUserflow.png)
+
+
+
+
+
+Team Chat functionality:
+
+
+
