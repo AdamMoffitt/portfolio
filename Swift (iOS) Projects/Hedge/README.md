@@ -9,7 +9,6 @@ Mission:
 ------------
 To facilitate the creation of mutual funds among millenials and friends to promote financial literacy within the intimidating space of investing.
 
-
 Technologies:
 ------------
  - Fabric
@@ -29,6 +28,10 @@ Technologies:
  - Beta Tested with Fabric
  - Fabric User tracking, usage tracking, and advanced mobile analytics
  - Git version control team workflow
+
+Team:
+------------
+Adam Moffitt, Hunter Hurja, Jordan Coppert
 
 Preparation:
 ------------
