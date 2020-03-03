@@ -7,6 +7,26 @@ Mission:
 ------------
 To facilitate the creation of mutual funds among millenials and friends to promote financial literacy within the intimidating space of investing.
 
+Technologies:
+------------
+ - Fabric
+ - Firebase Authentication
+ - Firebase Realtime Database
+ - Firebase Analytics
+ - Firebase Functions
+ - Firebase Cloud Messaging
+ - Firebase Invites
+ - Alpha Vantage Security Trading APIs
+ - IEX Trading APIs
+ - APN - Apple Push Notifications
+ - Team Chat - Realtime group messaging
+ - MVC Architecture
+ - Cocoapods
+ - Apple Beta Testing Framework
+ - Beta Tested with Fabric
+ - Fabric User tracking, usage tracking, and advanced mobile analytics
+ - Git version control team workflow
+
 Preparation:
 ------------
 1. Install Xcode 9
