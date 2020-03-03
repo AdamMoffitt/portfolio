@@ -47,26 +47,26 @@ Build and Run:
 Screenshots:
 --------------
 
-Users create and join different Leagues:
+Users create and join different Leagues.  
 ![Hedge League Screenshot](demo/leagueBrowse.png)
 
-Search and purchase securities (actual stock purchase functionality not completed, purchases are virtual only)
-![Hedge Wireframe Screenshot](demo/trade.png)
+Search and purchase securities (actual stock purchase functionality not completed, purchases are virtual only). 
+![Hedge Trade Screenshot](demo/trade.png)
 
-Users recieve notifications (APNs) for new messages, important notifications, stock updates etc.
-![Hedge Wireframe Screenshot](demo/Notifications.png)
+Users recieve notifications (APNs) for new messages, important notifications, stock updates etc.  
+![Hedge Notifications Screenshot](demo/Notifications.png)
 
-Track your team's aggregated stock success
-![Hedge Wireframe Screenshot](demo/teamBrowse.png)
+Track your team's aggregated stock success. 
+![Hedge Team Screenshot](demo/teamBrowse.png)
 
-View your available funds and portfolio value as well as check news updates and stock watchlist (similar to Robinhood wallet page)
-![Hedge Wireframe Screenshot](demo/wallet.png)
+View your available funds and portfolio value as well as check news updates and stock watchlist (similar to Robinhood wallet page). 
+![Hedge Wallet Screenshot](demo/Wallet.png)
 
 Authentication through Google
-![Hedge Wireframe Screenshot](demo/sign-in.png)
+![Hedge Sign In Screenshot](demo/sign-in.png)
 
 App Wireframe
-![Hedge Wireframe Screenshot](demo/majorUserflow.png)
+![Hedge Wireframe Screenshot](demo/majorUserflow.jpg)
 
 
 
