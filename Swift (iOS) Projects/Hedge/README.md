@@ -66,7 +66,7 @@ Authentication through Google.
 ![Hedge Sign In Screenshot](demo/sign-in.png)
 
 Team Chat functionality.   
-![Hedge Wireframe Screenshot](demo/chat.jpg)
+![Hedge Chat Screenshot](demo/chat.png)
 
 App Wireframe.  
 ![Hedge Wireframe Screenshot](demo/majorUserflow.jpg)
