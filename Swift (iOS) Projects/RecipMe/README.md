@@ -1,6 +1,7 @@
 # RecipMe
 
-iOS Mobile Application to track what is in your fridge and suggest recipes you can make with what you have on hand.
+iOS Mobile Application to track what is in your fridge and suggest recipes you can make with what you have on hand. Not sure what to eat for dinner? Forget dropping cash on eating out or delivery, and don't even think about another Top Ramen night. RecipMe suggests recipe ideas to you based on the ingredients that you have ON HAND in your kitchen.
+
 
 ## Technologies
  - Firebase Authentication
@@ -19,7 +20,17 @@ iOS Mobile Application to track what is in your fridge and suggest recipes you c
  - Core Data
  - Apple Speech Kit - Speech to Text Functionality
 
-## Team: Adam Moffitt, Hexi Xiao, Chris Turner, Rona Sheen
+## Application Demo Screenshots
 
-## Pitch Deck: 
+<img src="RecipMe/demo/favorites.png" alt="RecipMe" width="700"/>
+<img src="RecipMe @ 8d79376/demo/recipeSwipeView.png" alt="RecipMe" width="700"/>
+<img src="demo/recipe.png" alt="RecipMe" width="700"/>
+<img src="demo/missingIngredients.png" alt="RecipMe" width="700"/>
+<img src="demo/kitchen.png" alt="RecipMe" width="700"/>
+<img src="demo/loyalty.png" alt="RecipMe" width="700"/>
+<img src="demo/authentication.png" alt="RecipMe" width="700"/>
+
+### Development Team: Adam Moffitt
+### Pitch Competition Team: Adam Moffitt, Hexi Xiao, Chris Turner, Rona Sheen
+### Pitch Deck: 
 https://docs.google.com/presentation/d/1XnOwehLh69HB3l0qghepCWAVl6KJ-qOeuH7zBgdv91U/edit
