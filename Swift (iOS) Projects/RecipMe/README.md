@@ -22,7 +22,7 @@ iOS Mobile Application to track what is in your fridge and suggest recipes you c
 
 ## Application Demo Screenshots
 
-<img src="RecipMe/demo/favorites.png" alt="RecipMe" width="700"/>
+<img src="https://github.com/AdamMoffitt/RecipMe/blob/master/demo/favorites.png" alt="RecipMe" width="700"/>
 <img src="RecipMe @ 8d79376/demo/recipeSwipeView.png" alt="RecipMe" width="700"/>
 <img src="demo/recipe.png" alt="RecipMe" width="700"/>
 <img src="demo/missingIngredients.png" alt="RecipMe" width="700"/>
