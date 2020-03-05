@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "users" : {
+    	".read": "auth != null",
+    	".write": "auth != null"
+  	},
+  	"signups" : {
+   	 ".read": "true",
+   	 ".write": "true"
+ 	 	}
+	}
+}
