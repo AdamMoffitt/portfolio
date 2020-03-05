@@ -23,12 +23,12 @@ iOS Mobile Application to track what is in your fridge and suggest recipes you c
 ## Application Demo Screenshots
 
 <img src="https://github.com/AdamMoffitt/RecipMe/blob/master/demo/favorites.png" alt="RecipMe" width="700"/>
-<img src="RecipMe @ 8d79376/demo/recipeSwipeView.png" alt="RecipMe" width="700"/>
-<img src="demo/recipe.png" alt="RecipMe" width="700"/>
-<img src="demo/missingIngredients.png" alt="RecipMe" width="700"/>
-<img src="demo/kitchen.png" alt="RecipMe" width="700"/>
-<img src="demo/loyalty.png" alt="RecipMe" width="700"/>
-<img src="demo/authentication.png" alt="RecipMe" width="700"/>
+<img src="https://github.com/AdamMoffitt/RecipMe/blob/master/demo/recipeSwipeView.png" alt="RecipMe" width="700"/>
+<img src="https://github.com/AdamMoffitt/RecipMe/blob/master/demo/recipe.png" alt="RecipMe" width="700"/>
+<img src="https://github.com/AdamMoffitt/RecipMe/blob/master/demo/missingIngredients.png" alt="RecipMe" width="700"/>
+<img src="https://github.com/AdamMoffitt/RecipMe/blob/master/demo/kitchen.png" alt="RecipMe" width="700"/>
+<img src="https://github.com/AdamMoffitt/RecipMe/blob/master/demo/loyalty.png" alt="RecipMe" width="700"/>
+<img src="https://github.com/AdamMoffitt/RecipMe/blob/master/demo/authentication.png" alt="RecipMe" width="700"/>
 
 ### Development Team: Adam Moffitt
 ### Pitch Competition Team: Adam Moffitt, Hexi Xiao, Chris Turner, Rona Sheen
