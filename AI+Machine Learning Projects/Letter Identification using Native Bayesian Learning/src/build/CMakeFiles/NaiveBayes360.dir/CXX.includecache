@@ -1,0 +1,68 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/project2/project21Student/src/bitmap.cpp
+bitmap.hpp
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/project2/project21Student/src/bitmap.hpp
+
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/project2/project21Student/src/bitmap.hpp
+stdio.h
+-
+vector
+-
+cstring
+-
+cinttypes
+-
+iostream
+-
+fstream
+-
+
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/project2/project21Student/src/main.cpp
+iostream
+-
+fstream
+-
+vector
+-
+map
+-
+mnist_reader.hpp
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/project2/project21Student/src/mnist_reader.hpp
+mnist_utils.hpp
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/project2/project21Student/src/mnist_utils.hpp
+bitmap.hpp
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/project2/project21Student/src/bitmap.hpp
+math.h
+-
+sstream
+-
+
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/project2/project21Student/src/mnist_reader.hpp
+fstream
+-
+iostream
+-
+string
+-
+vector
+-
+cstdint
+-
+memory
+-
+mnist_reader_common.hpp
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/project2/project21Student/src/mnist_reader_common.hpp
+
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/project2/project21Student/src/mnist_reader_common.hpp
+
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/project2/project21Student/src/mnist_utils.hpp
+cmath
+-
+

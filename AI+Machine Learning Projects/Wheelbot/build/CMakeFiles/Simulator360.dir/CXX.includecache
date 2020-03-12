@@ -1,0 +1,90 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/Project3Student/MDP.cpp
+MDP.h
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/Project3Student/MDP.h
+
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/Project3Student/MDP.h
+stdio.h
+-
+map
+-
+Vector2D.h
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/Project3Student/Vector2D.h
+Simulator.h
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/Project3Student/Simulator.h
+Robot.h
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/Project3Student/Robot.h
+vector
+-
+float.h
+-
+
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/Project3Student/Robot.h
+stdio.h
+-
+vector
+-
+Vector2D.h
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/Project3Student/Vector2D.h
+
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/Project3Student/Simulator.cpp
+Simulator.h
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/Project3Student/Simulator.h
+
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/Project3Student/Simulator.h
+stdio.h
+-
+math.h
+-
+vector
+-
+cstdlib
+-
+iostream
+-
+random
+-
+Robot.h
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/Project3Student/Robot.h
+windows.h
+-
+stdlib.h
+-
+
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/Project3Student/Vector2D.h
+
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/Project3Student/main.cpp
+stdio.h
+-
+cstdlib
+-
+iostream
+-
+time.h
+-
+unistd.h
+-
+vector
+-
+map
+-
+random
+-
+string
+-
+Vector2D.h
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/Project3Student/Vector2D.h
+Robot.h
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/Project3Student/Robot.h
+Simulator.h
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/Project3Student/Simulator.h
+MDP.h
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/Project3Student/MDP.h
+

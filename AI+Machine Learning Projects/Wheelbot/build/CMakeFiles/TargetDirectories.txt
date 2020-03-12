@@ -1,0 +1,3 @@
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/Project3Student/build/CMakeFiles/rebuild_cache.dir
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/Project3Student/build/CMakeFiles/edit_cache.dir
+/Users/adammoffitt/Documents/USC Spring 2018/CS 360/Projects/Project3Student/build/CMakeFiles/Simulator360.dir
