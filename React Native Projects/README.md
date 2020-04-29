@@ -13,3 +13,5 @@ Technologies:
  - Apple Push notifications,  
  - Automated emailing (HTML template injection),  
  - Twilio SMS sending
+
+Contact Adam at admoffitt15@gmail.com for access
